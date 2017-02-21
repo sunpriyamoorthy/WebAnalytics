@@ -1,0 +1,32 @@
+package com.hm.routes
+
+import com.hm.connector.MysqlClient
+import spray.json.{JsArray, JsNumber, JsObject, JsString}
+import spray.routing.HttpService
+
+import collection.JavaConversions._
+/**
+  * Created by hari on 21/2/17.
+  */
+trait UserHandler extends  HttpService{
+
+
+  //random value generator
+  //
+  //r.nextInt
+  def listOfUsersApi={
+
+    val r=listUsers
+    complete(JsArray(r.map(i=>JsObject("id"->JsNumber(i))).toVector).prettyPrint)
+  }
+  def listUsers:Array[String]={
+
+    val rs = MysqlClient.getResultSet("select cookie from request_header group by cookie")
+    val result=new collection.mutable.ArrayBuffer[String]
+    while (rs.next()) {
+      result.add(rs.getString("cookie"))
+    }
+     result.toArray
+  }
+
+}
