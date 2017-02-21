@@ -6131,7 +6131,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1391ms :: artifacts dl 20ms
+[debug] :: resolution report :: resolve 1427ms :: artifacts dl 19ms
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT compile produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-compile.xml
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT runtime produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-runtime.xml
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT test produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-test.xml
@@ -6145,5 +6145,5 @@
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT docs produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-docs.xml
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT pom produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-pom.xml
 [debug] 	report for default#webanalytics-build;0.1-SNAPSHOT scala-tool produced in /home/hari/IdeaProjects/WebAnalytics/project/target/resolution-cache/reports/default-webanalytics-build-scala-tool.xml
-[debug] 	resolve done (1391ms resolve - 20ms download)
+[debug] 	resolve done (1427ms resolve - 19ms download)
 [info] Done updating.
