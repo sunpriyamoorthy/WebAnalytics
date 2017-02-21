@@ -4,7 +4,7 @@
 		module="webanalytics-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170221101120"
+		publication="20170221102706"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>
