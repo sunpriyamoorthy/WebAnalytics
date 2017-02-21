@@ -29,6 +29,7 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [info] Resolving org.scala-sbt#main;0.13.13 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#main;0.13.13 {compile=[default(compile)]}
+[debug] no default cache defined: set to /home/hari/.ivy2/cache
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#main;0.13.13
 [debug] 	found org.scala-sbt#main;0.13.13 in sbt-chain
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
@@ -1719,10 +1720,18 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
+[debug] == resolving dependencies default#webanalytics$sbt_2.10;1.0->io.spray#sbt-revolver;0.7.2 [default->default(compile)]
+[info] Resolving io.spray#sbt-revolver;0.7.2 ...
+[debug] sbt-chain: Checking cache for: dependency: io.spray#sbt-revolver;0.7.2 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: io.spray#sbt-revolver;0.7.2
+[debug] 	found io.spray#sbt-revolver;0.7.2 in sbt-chain
+[debug] 	[0.7.2] io.spray#sbt-revolver;0.7.2
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.13!sbt.jar
+[debug] 	[NOT REQUIRED] io.spray#sbt-revolver;0.7.2!sbt-revolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.13!main.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.13!compiler-interface.jar
@@ -1774,9 +1783,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 382ms :: artifacts dl 11ms
+[debug] :: resolution report :: resolve 449ms :: artifacts dl 11ms
 [debug] 	report for default#webanalytics$sbt_2.10;1.0 default produced in /home/hari/IdeaProjects/WebAnalytics/target/resolution-cache/reports/default-webanalytics$sbt_2.10-default.xml
-[debug] 	resolve done (382ms resolve - 11ms download)
+[debug] 	resolve done (449ms resolve - 11ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#webanalytics$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2308,6 +2317,16 @@
 [debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->com.thoughtworks.paranamer#paranamer;2.6 [default->runtime(*)]
 [debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->com.thoughtworks.paranamer#paranamer;2.6 [default->compile]
 [debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->com.thoughtworks.paranamer#paranamer;2.6 [default->master]
+[debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->io.spray#sbt-revolver;0.7.2 [default->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile), default, compile, master(*), runtime, compile(*), runtime(*), master]} => dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile), default, compile, master(*), runtime, compile(*), runtime(*), master]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]} => dependency: org.scala-lang#scala-library;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]} => dependency: org.scala-lang#scala-compiler;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]}
+[info] Resolving io.spray#sbt-revolver;0.7.2 ...
+[debug] sbt-chain: Checking cache for: dependency: io.spray#sbt-revolver;0.7.2 {default=[default(compile), compile]}
+[debug] sbt-chain: module revision found in cache: io.spray#sbt-revolver;0.7.2
+[debug] 	found io.spray#sbt-revolver;0.7.2 in sbt-chain
+[debug] 	[0.7.2] io.spray#sbt-revolver;0.7.2
+[debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->io.spray#sbt-revolver;0.7.2 [default->compile]
 [debug] == resolving dependencies default#webanalytics$sources_2.10;1.0->org.scala-sbt#test-agent;0.13.13 [default->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile), default, compile, master(*), runtime, compile(*), runtime(*), master]} => dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile), default, compile, master(*), runtime, compile(*), runtime(*), master]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]} => dependency: org.scala-lang#scala-library;2.10.6 {default=[default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master]}
@@ -2462,6 +2481,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar(src)
 [debug] 	[NOT REQUIRED] org.spire-math#json4s-support_2.10;0.6.0!json4s-support_2.10.jar(src)
 [debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar(src)
+[debug] 	[NOT REQUIRED] io.spray#sbt-revolver;0.7.2!sbt-revolver.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.13!test-agent.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#classfile;0.13.13!classfile.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#completion;0.13.13!completion.jar(src)
@@ -2470,6 +2490,6 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 82ms :: artifacts dl 13ms
+[debug] :: resolution report :: resolve 91ms :: artifacts dl 14ms
 [debug] 	report for default#webanalytics$sources_2.10;1.0 default produced in /home/hari/IdeaProjects/WebAnalytics/target/resolution-cache/reports/default-webanalytics$sources_2.10-default.xml
-[debug] 	resolve done (82ms resolve - 13ms download)
+[debug] 	resolve done (91ms resolve - 14ms download)

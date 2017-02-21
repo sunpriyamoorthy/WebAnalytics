@@ -4,7 +4,7 @@
 		module="webanalytics$sbt_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170220193037"
+		publication="20170221101126"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
@@ -13,5 +13,6 @@
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-sbt" name="sbt" rev="0.13.13" conf="default->default(compile)"/>
+		<dependency org="io.spray" name="sbt-revolver" rev="0.7.2" conf="default->default(compile)" sbtVersion="0.13" scalaVersion="2.10"/>
 	</dependencies>
 </ivy-module>
