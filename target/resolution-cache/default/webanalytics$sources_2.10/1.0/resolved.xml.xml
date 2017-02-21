@@ -4,7 +4,7 @@
 		module="webanalytics$sources_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170220193037"
+		publication="20170221101127"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
@@ -143,6 +143,9 @@
 		</dependency>
 		<dependency org="com.thoughtworks.paranamer" name="paranamer" rev="2.6" transitive="false" conf="default->compile,master(*),runtime,compile(*),runtime(*),master">
 			<artifact name="paranamer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="io.spray" name="sbt-revolver" rev="0.7.2" transitive="false" conf="default->default(compile),compile" sbtVersion="0.13" scalaVersion="2.10">
+			<artifact name="sbt-revolver" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="test-agent" rev="0.13.13" transitive="false" conf="default->default(compile),compile">
 			<artifact name="test-agent" type="src" ext="jar" conf="sources" e:classifier="sources"/>
