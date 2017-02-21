@@ -1,6 +1,7 @@
 package com.hm
 
 import akka.actor.Actor
+import com.hm.routes.Routes
 
 import scala.concurrent.ExecutionContext
 
