@@ -8,10 +8,11 @@ import scala.util.Try
 trait Configuration {
 
 
-  val config = ConfigFactory.load()
 
 
-  lazy val serviceHost = Try(config.getString("service.host")).getOrElse("localhost")
+
+
+  lazy val serviceHost = Try(Configuration.config.getString("service.host")).getOrElse("localhost")
 
 
   lazy val servicePort = Try(config.getInt("service.port")).getOrElse(8080)
@@ -31,3 +32,6 @@ trait Configuration {
 
   lazy val dbPassword = Try(config.getString("db.password")).toOption.orNull
 }
+ object Configuration{
+   val config = ConfigFactory.load()
+ }

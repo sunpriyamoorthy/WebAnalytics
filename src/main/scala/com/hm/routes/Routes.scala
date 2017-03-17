@@ -1,5 +1,7 @@
 package com.hm.routes
 
+import java.net.URI
+
 import com.mysql.jdbc.interceptors.SessionAssociationInterceptor
 import spray.http.{AllOrigins, DateTime, HttpCookie}
 import spray.http.MediaTypes.`text/html`
@@ -25,9 +27,10 @@ trait Routes extends HttpService with CookieHandler with UserHandler {
         )) {
           headerValueByName("User-Agent") { userAgent =>
             headerValueByName("referer") { referer =>
+              headerValueByName("referer") { referer =>
               optionalCookie("ckName") {
                 case Some(cookie) => complete("referer : " + referer + " ua : " + userAgent + " cookie : " + cookie.content)
-                case None => complete("referer : " + referer + " ua : " + userAgent)
+                case None => complete("referer : " + referer + " ua : " + userAgent + " domainname :" + getDomainName(referer))
               }
             }
           }
@@ -39,4 +42,7 @@ trait Routes extends HttpService with CookieHandler with UserHandler {
 
     }
   }
-}
+    def getDomainName(url:String) {
+      var uri = new URI(url);
+      println (uri)
+}}}
